@@ -4,6 +4,10 @@
 
 Este projeto analisa o engajamento das postagens do Instagram de uma empresa, identificando quais tipos de conteúdo geram mais curtidas e comentários. A análise abrange desde a importação e limpeza dos dados até a visualização e agrupamento das informações para extrair insights acionáveis.
 
+## Objetivo
+
+Responder: qual tipo de conteúdo **mais engaja** no Instagram da minha empresa?
+
 ## Estrutura do Projeto
 
 1. **Importação e Visualização de Dados:** Importação dos dados do Instagram e visualização inicial.
