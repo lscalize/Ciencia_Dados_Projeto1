@@ -17,7 +17,7 @@ Responder: qual tipo de conteúdo **mais engaja** no Instagram da minha empresa?
 5. **Análise por Agrupamentos:** Agrupamento de dados por tipo de postagem, presença de pessoas, campanhas, entre outros, para identificar padrões.
 6. **Conclusões e Insights:** Identificação dos principais fatores que influenciam o engajamento das postagens.
 
-## Ferramentas Utilizadas
+## Ferramentas|Bibliotecas Utilizadas
 
 - Python
 - Pandas
