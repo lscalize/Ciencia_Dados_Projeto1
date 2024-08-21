@@ -1,0 +1,8 @@
+# Remover a coluna 'Visualizações' da base de dados
+df_instagram = df_instagram.drop("Visualizações", axis=1)
+
+# Preencher valores nulos na coluna 'Carrossel' com "N"
+df_instagram['Carrossel'].fillna('N', inplace=True)
+
+# Converter a coluna 'Data' para o tipo datetime
+df_instagram['Data'] = pd.to_datetime(df_instagram['Data'], format='%d/%m/%Y')
