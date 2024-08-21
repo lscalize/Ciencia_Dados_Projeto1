@@ -1,0 +1,20 @@
+# Exibir informações básicas do DataFrame
+df_instagram.info()
+
+# Exibir as dimensões da base de dados (número de linhas e colunas)
+df_instagram.shape
+
+# Exibir a descrição estatística da base
+df_instagram.describe
+
+# Verificar a contagem de valores nulos por coluna
+df_instagram.isnull().sum()
+
+# Verificar a distribuição dos valores na coluna 'Carrossel'
+df_instagram['Carrossel'].value_counts()
+
+# Analisar a média de curtidas por tipo de post
+df_instagram.groupby('Tipo')['Curtidas'].mean()
+
+# Analisar a média de comentários por tipo de post
+df_instagram.groupby('Tipo')['Comentários'].mean()
