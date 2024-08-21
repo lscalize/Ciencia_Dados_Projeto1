@@ -27,7 +27,7 @@ Responder: qual tipo de conteúdo **mais engaja** no Instagram da minha empresa?
 
 Este repositório contém uma base de dados usada para análise de engajamento no Instagram.
 
-- **Nome do arquivo:** `dados_instagram.csv`
+- **Nome do arquivo:** `08. Analisando o engajamento no Instagram.xlsx`
 
 ## Conclusão
 
