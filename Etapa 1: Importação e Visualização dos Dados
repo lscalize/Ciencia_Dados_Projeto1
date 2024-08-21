@@ -1,0 +1,10 @@
+import pandas as pd
+
+# Importar a base de dados do Excel
+base_instagram = pd.read_excel('/content/08. Analisando o engajamento no Instagram.xlsx')
+
+# Converter a base para um DataFrame
+df_instagram = pd.DataFrame(base_instagram)
+
+# Visualizar as primeiras 5 linhas do DataFrame
+df_instagram.head(5)
