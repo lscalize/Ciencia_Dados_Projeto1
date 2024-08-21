@@ -23,11 +23,11 @@ Responder: qual tipo de conteúdo **mais engaja** no Instagram da minha empresa?
 - Pandas
 - Matplotlib
 
-## Sugestões para Futuras Análises
+## Base de Dados
 
-- Análise de Sentimento dos Comentários
-- Comparação de Engajamento com Competidores
-- Previsão de Engajamento para Novas Postagens
+Este repositório contém uma base de dados usada para análise de engajamento no Instagram.
+
+- **Nome do arquivo:** `dados_instagram.csv`
 
 ## Conclusão
 
