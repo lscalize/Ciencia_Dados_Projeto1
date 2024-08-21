@@ -1,0 +1,35 @@
+import matplotlib.pyplot as plt
+
+# Gráfico de dispersão para 'Curtidas' ao longo do tempo
+plt.figure(figsize=(18,8))
+plt.scatter(df_instagram['Data'], df_instagram['Curtidas'], color='red', label='Curtidas')
+plt.title('Curtidas por MÊS')
+plt.xlabel('Meses')
+plt.ylabel('Curtidas')
+plt.grid(True)
+plt.legend()
+plt.show()
+
+# Gráfico de dispersão para 'Comentários' ao longo do tempo
+plt.figure(figsize=(18,8))
+plt.scatter(df_instagram['Data'], df_instagram['Comentários'], color='blue', label='Comentários')
+plt.title('Comentários por MÊS')
+plt.xlabel('Meses')
+plt.ylabel('Comentários')
+plt.grid(True)
+plt.legend()
+plt.show()
+
+# Gráfico de barras para comparar curtidas por tipo de postagem
+df_instagram.groupby('Tipo')['Curtidas'].mean().plot(kind='bar', color='purple', figsize=(10,5))
+plt.title('Média de Curtidas por Tipo de Postagem')
+plt.xlabel('Tipo')
+plt.ylabel('Média de Curtidas')
+plt.show()
+
+# Gráfico de barras para comparar curtidas por carrossel
+df_instagram.groupby('Carrossel')['Curtidas'].mean().plot(kind='bar', color='green', figsize=(10,5))
+plt.title('Média de Curtidas por Carrossel')
+plt.xlabel('Carrossel')
+plt.ylabel('Média de Curtidas')
+plt.show()
