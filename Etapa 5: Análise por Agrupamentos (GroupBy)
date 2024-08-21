@@ -1,0 +1,20 @@
+# Agrupamento por Tipo e Pessoas
+df_instagram.groupby(["Tipo", "Pessoas"])["Curtidas"].mean()
+
+# Agrupamento por Campanhas
+df_instagram.groupby(["Campanhas"])["Curtidas"].mean()
+
+# Agrupamento por Carrossel
+df_instagram.groupby(["Carrossel"])["Curtidas"].mean()
+
+# Agrupamento por Pessoas e Campanhas
+df_instagram.groupby(["Pessoas", "Campanhas"])["Curtidas"].mean().sort_values()
+
+# Análise do impacto de vídeos no engajamento
+df_instagram[df_instagram['Tipo'] == 'Vídeo'].groupby(['Tipo'])[['Curtidas', 'Comentários']].mean()
+
+# Análise do impacto de fotos no engajamento
+df_instagram[df_instagram['Tipo'] == 'Foto'].groupby(['Tipo'])[['Curtidas', 'Comentários']].mean()
+
+# Análise do impacto de carrosséis no engajamento
+df_instagram[df_instagram['Carrossel'] == 'S'].groupby(['Carrossel'])[['Curtidas', 'Comentários']].mean()
