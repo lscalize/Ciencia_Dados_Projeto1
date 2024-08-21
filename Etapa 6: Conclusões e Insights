@@ -1,0 +1,14 @@
+# Insight: Postagens com pessoas engajam mais
+df_instagram.groupby(["Pessoas"])["Curtidas"].mean()
+
+# Insight: Campanhas aumentam o engajamento
+df_instagram.groupby(["Campanhas"])["Curtidas"].mean()
+
+# Insight: Vídeos têm maior engajamento
+df_instagram[df_instagram['Tipo'] == 'Vídeo'].groupby(['Tipo'])['Curtidas'].mean()
+
+# Insight: Fotos têm menor engajamento
+df_instagram[df_instagram['Tipo'] == 'Foto'].groupby(['Tipo'])['Curtidas'].mean()
+
+# Insight: Carrosséis não impactam significativamente o engajamento
+df_instagram[df_instagram['Carrossel'] == 'S'].groupby(['Carrossel'])['Curtidas'].mean()
